@@ -80,9 +80,11 @@ namespace ObserverDPApplication
 
         private void futbol_Click(object sender, EventArgs e)
         {
+            basketbol.selected = false;
+            voleybol.selected = false;
+            yuzme.selected = false;
             sporcular.Enabled = true;
             sporcular.Items.Clear();
-            dataGridView1.DataSource = null;
             for (int i=0; i<fSporcu.Items.Count; i++)
             {
                 sporcular.Items.Add(fSporcu.Items[i].ToString());
@@ -91,9 +93,11 @@ namespace ObserverDPApplication
 
         private void basketbol_Click(object sender, EventArgs e)
         {
+            futbol.selected = false;
+            voleybol.selected = false;
+            yuzme.selected = false;
             sporcular.Enabled = true;
             sporcular.Items.Clear();
-            dataGridView1.DataSource = null;
             for (int i = 0; i < bSporcu.Items.Count; i++)
             {
                 sporcular.Items.Add(bSporcu.Items[i].ToString());
@@ -102,9 +106,11 @@ namespace ObserverDPApplication
 
         private void voleybol_Click(object sender, EventArgs e)
         {
+            futbol.selected = false;
+            basketbol.selected = false;
+            yuzme.selected = false;
             sporcular.Enabled = true;
             sporcular.Items.Clear();
-            dataGridView1.DataSource = null;
             for (int i = 0; i < vSporcu.Items.Count; i++)
             {
                 sporcular.Items.Add(vSporcu.Items[i].ToString());
@@ -113,9 +119,11 @@ namespace ObserverDPApplication
 
         private void yuzme_Click(object sender, EventArgs e)
         {
+            futbol.selected = false;
+            basketbol.selected = false;
+            voleybol.selected = false;
             sporcular.Enabled = true;
             sporcular.Items.Clear();
-            dataGridView1.DataSource = null;
             for (int i = 0; i < ySporcu.Items.Count; i++)
             {
                 sporcular.Items.Add(ySporcu.Items[i].ToString());
@@ -139,140 +147,6 @@ namespace ObserverDPApplication
                 f.Gol = Convert.ToInt32(fgol.Text);
                 f.Asist = Convert.ToInt32(fasist.Text);
                 fguncellendiLbl.Visible = true;
-            }
-        }
-        
-        private void sporcular_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (futbol.selected)
-            {
-                if (fsure.Text == "" || fgol.Text == "" || fasist.Text == "")
-                {
-                    MessageBox.Show("Veriler Güncel Değil !!!");
-                }
-                else
-                {
-                    sporcular.Enabled = true;
-                    tablo.Clear();
-                    tablo.Columns.Add("AD SOYAD", typeof(string));
-                    tablo.Columns.Add("SÜRE", typeof(int));
-                    tablo.Columns.Add("GOL", typeof(int));
-                    tablo.Columns.Add("ASİST", typeof(int));
-                    
-
-                    Futbolcu f = new Futbolcu { Name = fSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(fsure.Text), Gol = Convert.ToInt32(fgol.Text), Asist = Convert.ToInt32(fasist.Text) };
-
-                    tablo.Rows.Add(f.Name.ToString(), f.Sure.ToString(), f.Gol.ToString(), f.Asist.ToString());
-                    dataGridView1.DataSource = tablo;
-                    sporcular.Enabled = false;
-                }
-            }
-            if (basketbol.selected)
-            {
-                if (bsure.Text == "" || bsayi.Text == "" || bribaund.Text == "")
-                {
-                    MessageBox.Show("Veriler Güncel Değil !!!");
-                }
-                else
-                {
-                    tablo.Clear();
-                    tablo.Columns.Add("AD SOYAD", typeof(string));
-                    tablo.Columns.Add("SÜRE", typeof(int));
-                    tablo.Columns.Add("SAYI", typeof(int));
-                    tablo.Columns.Add("RİBAUND", typeof(int));
-                    
-
-                    Basketbolcu b = new Basketbolcu { Name = bSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(bsure.Text), Sayi = Convert.ToInt32(bsayi.Text), Ribaund = Convert.ToInt32(bribaund.Text) };
-
-                    tablo.Rows.Add(b.Name.ToString(), b.Sure.ToString(), b.Sayi.ToString(), b.Ribaund.ToString());
-                    dataGridView1.DataSource = tablo;
-                    sporcular.Enabled = false;
-                }
-            }
-            if (voleybol.selected)
-            {
-                if (vsure.Text == "" || vpas.Text == "" || vsmac.Text == "")
-                {
-                    MessageBox.Show("Veriler Güncel Değil !!!");
-                }
-                else
-                {
-                    tablo.Clear();
-                    tablo.Columns.Add("AD SOYAD", typeof(string));
-                    tablo.Columns.Add("SÜRE", typeof(int));
-                    tablo.Columns.Add("PAS", typeof(int));
-                    tablo.Columns.Add("SMAÇ", typeof(int));
-                    dataGridView1.DataSource = tablo;
-
-                    Voleybolcu v = new Voleybolcu { Name = vSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(vsure.Text), Pas = Convert.ToInt32(vpas.Text), Smac = Convert.ToInt32(vsmac.Text) };
-
-                    tablo.Rows.Add(v.Name.ToString(), v.Sure.ToString(), v.Pas.ToString(), v.Smac.ToString());
-                    dataGridView1.DataSource = tablo;
-                    sporcular.Enabled = false;
-                }
-            }
-            if (yuzme.selected)
-            {
-                if (ysırtsure.Text == "" || ysırtmesafe.Text == "" || ysırtteknik.Text == "" || ykelebeksure.Text == "" || ykelebekmesafe.Text == "" || ykelebekteknik.Text == "" || ykurbagasure.Text == "" || ykurbagamesafe.Text == "" || ykurbagateknik.Text == "" || yserbestsure.Text == "" || yserbestmesafe.Text == "" || yserbestteknik.Text == "")
-                {
-                    MessageBox.Show("Veriler Güncel Değil !!!");
-                }
-                else
-                {
-                    tablo.Clear();
-                    tablo.Columns.Add("AD SOYAD", typeof(string));
-                    tablo.Columns.Add("SIRT SÜRE", typeof(int));
-                    tablo.Columns.Add("SIRT MESAFE", typeof(int));
-                    tablo.Columns.Add("SIRT TEKNİK", typeof(string));
-                    tablo.Columns.Add("KELEBEK SÜRE", typeof(int));
-                    tablo.Columns.Add("KELEBEK MESAFE", typeof(int));
-                    tablo.Columns.Add("KELEBEK TEKNİK", typeof(string));
-                    tablo.Columns.Add("KURBAĞA SÜRE", typeof(int));
-                    tablo.Columns.Add("KURBAĞA MESAFE", typeof(int));
-                    tablo.Columns.Add("KURBAĞA TEKNİK", typeof(string));
-                    tablo.Columns.Add("SERBEST SÜRE", typeof(int));
-                    tablo.Columns.Add("SERBEST MESAFE", typeof(int));
-                    tablo.Columns.Add("SERBEST TEKNİK", typeof(string));
-                    dataGridView1.DataSource = tablo;
-
-                    Yuzucu y = new Yuzucu { Name = ySporcu.SelectedItem.ToString(), SırtSure = Convert.ToInt32(ysırtsure.Text), SırtMesafe = Convert.ToInt32(ysırtmesafe.Text), SırtTeknik = ysırtteknik.Text.ToString(), KelebekSure = Convert.ToInt32(ykelebeksure.Text), KelebekMesafe = Convert.ToInt32(ykelebekmesafe.Text), KelebekTeknik = ykelebekteknik.Text, KurbagaSure = Convert.ToInt32(ykurbagasure.Text), KurbagaMesafe = Convert.ToInt32(ykurbagamesafe.Text), KurbagaTeknik = ykurbagateknik.Text, SerbestSure = Convert.ToInt32(yserbestsure.Text), SerbestMesafe = Convert.ToInt32(yserbestmesafe.Text), SerbestTeknik = yserbestteknik.Text.ToString() };
-
-                    tablo.Rows.Add(y.Name.ToString(), y.SırtSure.ToString(), y.SırtMesafe.ToString(), y.SırtTeknik.ToString(), y.KelebekSure.ToString(), y.KelebekMesafe.ToString(), y.KelebekTeknik.ToString(), y.KurbagaSure.ToString(), y.KurbagaMesafe.ToString(), y.KurbagaTeknik.ToString(), y.SerbestSure.ToString(), y.SerbestMesafe.ToString(), y.SerbestTeknik.ToString());
-                    dataGridView1.DataSource = tablo;
-                    sporcular.Enabled = false;
-                }
-            }
-        }
-
-        private void yenileBtn_Click(object sender, EventArgs e)
-        {
-            if (futbol.selected)
-            {
-                Futbolcu f = new Futbolcu { Name = fSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(fsure.Text), Gol = Convert.ToInt32(fgol.Text), Asist = Convert.ToInt32(fasist.Text) };
-
-                tablo.Rows.Add(f.Name.ToString(), f.Sure.ToString(), f.Gol.ToString(), f.Asist.ToString());
-                dataGridView1.DataSource = tablo;
-            }
-            if (basketbol.selected)
-            {
-                Basketbolcu b = new Basketbolcu { Name = bSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(bsure.Text), Sayi = Convert.ToInt32(bsayi.Text), Ribaund = Convert.ToInt32(bribaund.Text) };
-
-                tablo.Rows.Add(b.Name.ToString(), b.Sure.ToString(), b.Sayi.ToString(), b.Ribaund.ToString());
-                dataGridView1.DataSource = tablo;
-            }
-            if (voleybol.selected)
-            {
-                Voleybolcu v = new Voleybolcu { Name = vSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(vsure.Text), Pas = Convert.ToInt32(vpas.Text), Smac = Convert.ToInt32(vsmac.Text) };
-
-                tablo.Rows.Add(v.Name.ToString(), v.Sure.ToString(), v.Pas.ToString(), v.Smac.ToString());
-                dataGridView1.DataSource = tablo;
-            }
-            if (yuzme.selected)
-            {
-                Yuzucu y = new Yuzucu { Name = ySporcu.SelectedItem.ToString(), SırtSure = Convert.ToInt32(ysırtsure.Text), SırtMesafe = Convert.ToInt32(ysırtmesafe.Text), SırtTeknik = ysırtteknik.Text.ToString(), KelebekSure = Convert.ToInt32(ykelebeksure.Text), KelebekMesafe = Convert.ToInt32(ykelebekmesafe.Text), KelebekTeknik = ykelebekteknik.Text, KurbagaSure = Convert.ToInt32(ykurbagasure.Text), KurbagaMesafe = Convert.ToInt32(ykurbagamesafe.Text), KurbagaTeknik = ykurbagateknik.Text, SerbestSure = Convert.ToInt32(yserbestsure.Text), SerbestMesafe = Convert.ToInt32(yserbestmesafe.Text), SerbestTeknik = yserbestteknik.Text.ToString() };
-
-                tablo.Rows.Add(y.Name.ToString(), y.SırtSure.ToString(), y.SırtMesafe.ToString(), y.SırtTeknik.ToString(), y.KelebekSure.ToString(), y.KelebekMesafe.ToString(), y.KelebekTeknik.ToString(), y.KurbagaSure.ToString(), y.KurbagaMesafe.ToString(), y.KurbagaTeknik.ToString(), y.SerbestSure.ToString(), y.SerbestMesafe.ToString(), y.SerbestTeknik.ToString());
-                dataGridView1.DataSource = tablo;
             }
         }
 
@@ -390,6 +264,52 @@ namespace ObserverDPApplication
             }
             
 
+        }
+
+        private void getirBtn_Click(object sender, EventArgs e)
+        {
+            veriListBox.Items.Clear();
+            if (futbol.selected)
+            {
+                Futbolcu f = new Futbolcu { Name = fSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(fsure.Text), Gol = Convert.ToInt32(fgol.Text), Asist = Convert.ToInt32(fasist.Text) };
+                veriListBox.Items.Add("AD SOYAD: " + f.Name);
+                veriListBox.Items.Add("OYNADIĞI SÜRE: " + f.Sure);
+                veriListBox.Items.Add("ATTIĞI GOL: " + f.Gol);
+                veriListBox.Items.Add("YAPTIĞI ASİST: " + f.Asist);
+            }
+            if (basketbol.selected)
+            {
+                Basketbolcu b = new Basketbolcu { Name = bSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(bsure.Text), Sayi = Convert.ToInt32(bsayi.Text), Ribaund = Convert.ToInt32(bribaund.Text) };
+                veriListBox.Items.Add("AD SOYAD: " + b.Name);
+                veriListBox.Items.Add("OYNADIĞI SÜRE: " + b.Sure);
+                veriListBox.Items.Add("ATTIĞI SAYI: " + b.Sayi);
+                veriListBox.Items.Add("YAPTIĞI RİBAUND: " + b.Ribaund);
+            }
+            if (voleybol.selected)
+            {
+                Voleybolcu v = new Voleybolcu { Name = vSporcu.SelectedItem.ToString(), Sure = Convert.ToInt32(vsure.Text), Pas = Convert.ToInt32(vpas.Text), Smac = Convert.ToInt32(vsmac.Text) };
+                veriListBox.Items.Add("AD SOYAD: " + v.Name);
+                veriListBox.Items.Add("OYNADIĞI SÜRE: " + v.Sure);
+                veriListBox.Items.Add("ATTIĞI PAS: " + v.Pas);
+                veriListBox.Items.Add("VURDUĞU SMAC: " + v.Smac);
+            }
+            if (yuzme.selected)
+            {
+                Yuzucu y = new Yuzucu { Name = ySporcu.SelectedItem.ToString(), SırtSure = Convert.ToInt32(ysırtsure.Text), SırtMesafe = Convert.ToInt32(ysırtmesafe.Text), SırtTeknik = ysırtteknik.Text.ToString(), KelebekSure = Convert.ToInt32(ykelebeksure.Text), KelebekMesafe = Convert.ToInt32(ykelebekmesafe.Text), KelebekTeknik = ykelebekteknik.Text, KurbagaSure = Convert.ToInt32(ykurbagasure.Text), KurbagaMesafe = Convert.ToInt32(ykurbagamesafe.Text), KurbagaTeknik = ykurbagateknik.Text, SerbestSure = Convert.ToInt32(yserbestsure.Text), SerbestMesafe = Convert.ToInt32(yserbestmesafe.Text), SerbestTeknik = yserbestteknik.Text.ToString() };
+                veriListBox.Items.Add("AD SOYAD: " + y.Name);
+                veriListBox.Items.Add("SIRT SÜRE: " + y.SırtSure);
+                veriListBox.Items.Add("SIRT MESAFE: " + y.SırtMesafe);
+                veriListBox.Items.Add("SIRT TEKNİK: " + y.SırtTeknik);
+                veriListBox.Items.Add("KELEBEK SÜRE: " + y.KelebekSure);
+                veriListBox.Items.Add("KELEBEK MESAFE: " + y.KelebekMesafe);
+                veriListBox.Items.Add("KELEBE TEKNİK: " + y.KelebekTeknik);
+                veriListBox.Items.Add("KURBAĞA SÜRE: " + y.KurbagaSure);
+                veriListBox.Items.Add("KURBAĞA MESAFE: " + y.KurbagaMesafe);
+                veriListBox.Items.Add("KURBAĞA TEKNİK: " + y.KurbagaTeknik);
+                veriListBox.Items.Add("SERBEST SÜRE: " + y.SerbestSure);
+                veriListBox.Items.Add("SERBEST MESAFE: " + y.SerbestMesafe);
+                veriListBox.Items.Add("SERBEST TEKNİK: " + y.SerbestTeknik);
+            }
         }
     }
 }

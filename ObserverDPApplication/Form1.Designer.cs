@@ -30,13 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ustPnl = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.kapatPBtn = new System.Windows.Forms.PictureBox();
             this.yanPnl = new System.Windows.Forms.Panel();
+            this.veriBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.yuzmeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.voleybolBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.basketbolBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.futbolBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.futbolPnl = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel27 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.fasist = new Bunifu.Framework.BunifuCustomTextbox();
             this.fgol = new Bunifu.Framework.BunifuCustomTextbox();
             this.fguncellendiLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.fkaydetBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fsure = new Bunifu.Framework.BunifuCustomTextbox();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -49,6 +57,7 @@
             this.bribaund = new Bunifu.Framework.BunifuCustomTextbox();
             this.bsayi = new Bunifu.Framework.BunifuCustomTextbox();
             this.bguncellendiLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bkaydetBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bsure = new Bunifu.Framework.BunifuCustomTextbox();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -61,6 +70,7 @@
             this.vsmac = new Bunifu.Framework.BunifuCustomTextbox();
             this.vpas = new Bunifu.Framework.BunifuCustomTextbox();
             this.vguncellendiLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.vkaydetBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.vsure = new Bunifu.Framework.BunifuCustomTextbox();
             this.bunifuCustomLabel21 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel22 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -78,6 +88,7 @@
             this.bunifuCustomLabel29 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel28 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.yguncellendiLbl = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.ykaydetBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.yserbestteknik = new Bunifu.Framework.BunifuCustomTextbox();
             this.ykurbagateknik = new Bunifu.Framework.BunifuCustomTextbox();
             this.ykelebekteknik = new Bunifu.Framework.BunifuCustomTextbox();
@@ -102,26 +113,17 @@
             this.anasayfaPnl = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.veriPnl = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.getirBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel36 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.sporcular = new System.Windows.Forms.ComboBox();
-            this.ykaydetBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.vkaydetBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bkaydetBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.fkaydetBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.yenileBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.yuzme = new Bunifu.Framework.UI.BunifuFlatButton();
             this.futbol = new Bunifu.Framework.UI.BunifuFlatButton();
             this.voleybol = new Bunifu.Framework.UI.BunifuFlatButton();
             this.basketbol = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.veriBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.yuzmeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.voleybolBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.basketbolBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.futbolBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kapatPBtn = new System.Windows.Forms.PictureBox();
+            this.veriListBox = new System.Windows.Forms.ListBox();
             this.ustPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kapatPBtn)).BeginInit();
             this.yanPnl.SuspendLayout();
             this.futbolPnl.SuspendLayout();
             this.basketbolPnl.SuspendLayout();
@@ -129,9 +131,6 @@
             this.yuzmePnl.SuspendLayout();
             this.anasayfaPnl.SuspendLayout();
             this.veriPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kapatPBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // ustPnl
@@ -143,6 +142,27 @@
             this.ustPnl.Name = "ustPnl";
             this.ustPnl.Size = new System.Drawing.Size(942, 51);
             this.ustPnl.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ObserverDPApplication.Properties.Resources.whistle;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // kapatPBtn
+            // 
+            this.kapatPBtn.Image = global::ObserverDPApplication.Properties.Resources.close;
+            this.kapatPBtn.Location = new System.Drawing.Point(906, 12);
+            this.kapatPBtn.Name = "kapatPBtn";
+            this.kapatPBtn.Size = new System.Drawing.Size(24, 24);
+            this.kapatPBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.kapatPBtn.TabIndex = 0;
+            this.kapatPBtn.TabStop = false;
+            this.kapatPBtn.Click += new System.EventHandler(this.kapatPBtn_Click);
             // 
             // yanPnl
             // 
@@ -156,6 +176,197 @@
             this.yanPnl.Name = "yanPnl";
             this.yanPnl.Size = new System.Drawing.Size(213, 516);
             this.yanPnl.TabIndex = 1;
+            // 
+            // veriBtn
+            // 
+            this.veriBtn.Active = false;
+            this.veriBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.veriBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.veriBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.veriBtn.BorderRadius = 0;
+            this.veriBtn.ButtonText = "İstatistik Verileri";
+            this.veriBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.veriBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.veriBtn.Enabled = false;
+            this.veriBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.veriBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.veriBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.statistic;
+            this.veriBtn.Iconimage_right = null;
+            this.veriBtn.Iconimage_right_Selected = null;
+            this.veriBtn.Iconimage_Selected = null;
+            this.veriBtn.IconMarginLeft = 0;
+            this.veriBtn.IconMarginRight = 0;
+            this.veriBtn.IconRightVisible = true;
+            this.veriBtn.IconRightZoom = 0D;
+            this.veriBtn.IconVisible = true;
+            this.veriBtn.IconZoom = 90D;
+            this.veriBtn.IsTab = false;
+            this.veriBtn.Location = new System.Drawing.Point(13, 398);
+            this.veriBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.veriBtn.Name = "veriBtn";
+            this.veriBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.veriBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.veriBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.veriBtn.selected = false;
+            this.veriBtn.Size = new System.Drawing.Size(182, 62);
+            this.veriBtn.TabIndex = 4;
+            this.veriBtn.Text = "İstatistik Verileri";
+            this.veriBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.veriBtn.Textcolor = System.Drawing.Color.White;
+            this.veriBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.veriBtn.Click += new System.EventHandler(this.veriBtn_Click);
+            // 
+            // yuzmeBtn
+            // 
+            this.yuzmeBtn.Active = false;
+            this.yuzmeBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.yuzmeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.yuzmeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.yuzmeBtn.BorderRadius = 0;
+            this.yuzmeBtn.ButtonText = "Yüzme";
+            this.yuzmeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yuzmeBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.yuzmeBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.yuzmeBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.yuzmeBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.Swim;
+            this.yuzmeBtn.Iconimage_right = null;
+            this.yuzmeBtn.Iconimage_right_Selected = null;
+            this.yuzmeBtn.Iconimage_Selected = null;
+            this.yuzmeBtn.IconMarginLeft = 0;
+            this.yuzmeBtn.IconMarginRight = 0;
+            this.yuzmeBtn.IconRightVisible = true;
+            this.yuzmeBtn.IconRightZoom = 0D;
+            this.yuzmeBtn.IconVisible = true;
+            this.yuzmeBtn.IconZoom = 90D;
+            this.yuzmeBtn.IsTab = false;
+            this.yuzmeBtn.Location = new System.Drawing.Point(13, 303);
+            this.yuzmeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.yuzmeBtn.Name = "yuzmeBtn";
+            this.yuzmeBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.yuzmeBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.yuzmeBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.yuzmeBtn.selected = false;
+            this.yuzmeBtn.Size = new System.Drawing.Size(182, 62);
+            this.yuzmeBtn.TabIndex = 3;
+            this.yuzmeBtn.Text = "Yüzme";
+            this.yuzmeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yuzmeBtn.Textcolor = System.Drawing.Color.White;
+            this.yuzmeBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yuzmeBtn.Click += new System.EventHandler(this.yuzmeBtn_Click);
+            // 
+            // voleybolBtn
+            // 
+            this.voleybolBtn.Active = false;
+            this.voleybolBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.voleybolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.voleybolBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.voleybolBtn.BorderRadius = 0;
+            this.voleybolBtn.ButtonText = "Voleybol";
+            this.voleybolBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.voleybolBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.voleybolBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.voleybolBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.voleybolBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.Vtop;
+            this.voleybolBtn.Iconimage_right = null;
+            this.voleybolBtn.Iconimage_right_Selected = null;
+            this.voleybolBtn.Iconimage_Selected = null;
+            this.voleybolBtn.IconMarginLeft = 0;
+            this.voleybolBtn.IconMarginRight = 0;
+            this.voleybolBtn.IconRightVisible = true;
+            this.voleybolBtn.IconRightZoom = 0D;
+            this.voleybolBtn.IconVisible = true;
+            this.voleybolBtn.IconZoom = 90D;
+            this.voleybolBtn.IsTab = false;
+            this.voleybolBtn.Location = new System.Drawing.Point(13, 215);
+            this.voleybolBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.voleybolBtn.Name = "voleybolBtn";
+            this.voleybolBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.voleybolBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.voleybolBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.voleybolBtn.selected = false;
+            this.voleybolBtn.Size = new System.Drawing.Size(182, 62);
+            this.voleybolBtn.TabIndex = 2;
+            this.voleybolBtn.Text = "Voleybol";
+            this.voleybolBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.voleybolBtn.Textcolor = System.Drawing.Color.White;
+            this.voleybolBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voleybolBtn.Click += new System.EventHandler(this.voleybolBtn_Click);
+            // 
+            // basketbolBtn
+            // 
+            this.basketbolBtn.Active = false;
+            this.basketbolBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.basketbolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.basketbolBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.basketbolBtn.BorderRadius = 0;
+            this.basketbolBtn.ButtonText = "Basketbol";
+            this.basketbolBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.basketbolBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.basketbolBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.basketbolBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.basketbolBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.Btop;
+            this.basketbolBtn.Iconimage_right = null;
+            this.basketbolBtn.Iconimage_right_Selected = null;
+            this.basketbolBtn.Iconimage_Selected = null;
+            this.basketbolBtn.IconMarginLeft = 0;
+            this.basketbolBtn.IconMarginRight = 0;
+            this.basketbolBtn.IconRightVisible = true;
+            this.basketbolBtn.IconRightZoom = 0D;
+            this.basketbolBtn.IconVisible = true;
+            this.basketbolBtn.IconZoom = 90D;
+            this.basketbolBtn.IsTab = false;
+            this.basketbolBtn.Location = new System.Drawing.Point(13, 130);
+            this.basketbolBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.basketbolBtn.Name = "basketbolBtn";
+            this.basketbolBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.basketbolBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.basketbolBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.basketbolBtn.selected = false;
+            this.basketbolBtn.Size = new System.Drawing.Size(182, 62);
+            this.basketbolBtn.TabIndex = 1;
+            this.basketbolBtn.Text = "Basketbol";
+            this.basketbolBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.basketbolBtn.Textcolor = System.Drawing.Color.White;
+            this.basketbolBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.basketbolBtn.Click += new System.EventHandler(this.basketbolBtn_Click);
+            // 
+            // futbolBtn
+            // 
+            this.futbolBtn.Active = false;
+            this.futbolBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.futbolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.futbolBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.futbolBtn.BorderRadius = 0;
+            this.futbolBtn.ButtonText = "Futbol";
+            this.futbolBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.futbolBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.futbolBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.futbolBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.futbolBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.Ftop;
+            this.futbolBtn.Iconimage_right = null;
+            this.futbolBtn.Iconimage_right_Selected = null;
+            this.futbolBtn.Iconimage_Selected = null;
+            this.futbolBtn.IconMarginLeft = 0;
+            this.futbolBtn.IconMarginRight = 0;
+            this.futbolBtn.IconRightVisible = true;
+            this.futbolBtn.IconRightZoom = 0D;
+            this.futbolBtn.IconVisible = true;
+            this.futbolBtn.IconZoom = 90D;
+            this.futbolBtn.IsTab = false;
+            this.futbolBtn.Location = new System.Drawing.Point(13, 38);
+            this.futbolBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.futbolBtn.Name = "futbolBtn";
+            this.futbolBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.futbolBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.futbolBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.futbolBtn.selected = false;
+            this.futbolBtn.Size = new System.Drawing.Size(182, 62);
+            this.futbolBtn.TabIndex = 0;
+            this.futbolBtn.Text = "Futbol";
+            this.futbolBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.futbolBtn.Textcolor = System.Drawing.Color.White;
+            this.futbolBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.futbolBtn.Click += new System.EventHandler(this.futbolBtn_Click);
             // 
             // bunifuDragControl1
             // 
@@ -223,6 +434,45 @@
             this.fguncellendiLbl.TabIndex = 50;
             this.fguncellendiLbl.Text = "BİLGİLER GÜNCELLENDİ!!!";
             this.fguncellendiLbl.Visible = false;
+            // 
+            // fkaydetBtn
+            // 
+            this.fkaydetBtn.Active = false;
+            this.fkaydetBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.fkaydetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.fkaydetBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fkaydetBtn.BorderRadius = 0;
+            this.fkaydetBtn.ButtonText = "Kaydet";
+            this.fkaydetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fkaydetBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.fkaydetBtn.Enabled = false;
+            this.fkaydetBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.fkaydetBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.fkaydetBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.ticks;
+            this.fkaydetBtn.Iconimage_right = null;
+            this.fkaydetBtn.Iconimage_right_Selected = null;
+            this.fkaydetBtn.Iconimage_Selected = null;
+            this.fkaydetBtn.IconMarginLeft = 0;
+            this.fkaydetBtn.IconMarginRight = 0;
+            this.fkaydetBtn.IconRightVisible = true;
+            this.fkaydetBtn.IconRightZoom = 0D;
+            this.fkaydetBtn.IconVisible = true;
+            this.fkaydetBtn.IconZoom = 90D;
+            this.fkaydetBtn.IsTab = false;
+            this.fkaydetBtn.Location = new System.Drawing.Point(484, 318);
+            this.fkaydetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fkaydetBtn.Name = "fkaydetBtn";
+            this.fkaydetBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.fkaydetBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.fkaydetBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.fkaydetBtn.selected = false;
+            this.fkaydetBtn.Size = new System.Drawing.Size(193, 65);
+            this.fkaydetBtn.TabIndex = 49;
+            this.fkaydetBtn.Text = "Kaydet";
+            this.fkaydetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fkaydetBtn.Textcolor = System.Drawing.Color.White;
+            this.fkaydetBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fkaydetBtn.Click += new System.EventHandler(this.fkaydetBtn_Click);
             // 
             // fsure
             // 
@@ -364,6 +614,45 @@
             this.bguncellendiLbl.Text = "BİLGİLER GÜNCELLENDİ!!!";
             this.bguncellendiLbl.Visible = false;
             // 
+            // bkaydetBtn
+            // 
+            this.bkaydetBtn.Active = false;
+            this.bkaydetBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.bkaydetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.bkaydetBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bkaydetBtn.BorderRadius = 0;
+            this.bkaydetBtn.ButtonText = "Kaydet";
+            this.bkaydetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bkaydetBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.bkaydetBtn.Enabled = false;
+            this.bkaydetBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bkaydetBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.bkaydetBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.ticks;
+            this.bkaydetBtn.Iconimage_right = null;
+            this.bkaydetBtn.Iconimage_right_Selected = null;
+            this.bkaydetBtn.Iconimage_Selected = null;
+            this.bkaydetBtn.IconMarginLeft = 0;
+            this.bkaydetBtn.IconMarginRight = 0;
+            this.bkaydetBtn.IconRightVisible = true;
+            this.bkaydetBtn.IconRightZoom = 0D;
+            this.bkaydetBtn.IconVisible = true;
+            this.bkaydetBtn.IconZoom = 90D;
+            this.bkaydetBtn.IsTab = false;
+            this.bkaydetBtn.Location = new System.Drawing.Point(486, 320);
+            this.bkaydetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bkaydetBtn.Name = "bkaydetBtn";
+            this.bkaydetBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.bkaydetBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.bkaydetBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.bkaydetBtn.selected = false;
+            this.bkaydetBtn.Size = new System.Drawing.Size(193, 65);
+            this.bkaydetBtn.TabIndex = 61;
+            this.bkaydetBtn.Text = "Kaydet";
+            this.bkaydetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bkaydetBtn.Textcolor = System.Drawing.Color.White;
+            this.bkaydetBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bkaydetBtn.Click += new System.EventHandler(this.bkaydetBtn_Click);
+            // 
             // bsure
             // 
             this.bsure.BorderColor = System.Drawing.Color.SeaGreen;
@@ -504,6 +793,45 @@
             this.vguncellendiLbl.TabIndex = 74;
             this.vguncellendiLbl.Text = "BİLGİLER GÜNCELLENDİ!!!";
             this.vguncellendiLbl.Visible = false;
+            // 
+            // vkaydetBtn
+            // 
+            this.vkaydetBtn.Active = false;
+            this.vkaydetBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.vkaydetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.vkaydetBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.vkaydetBtn.BorderRadius = 0;
+            this.vkaydetBtn.ButtonText = "Kaydet";
+            this.vkaydetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.vkaydetBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.vkaydetBtn.Enabled = false;
+            this.vkaydetBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.vkaydetBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.vkaydetBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.ticks;
+            this.vkaydetBtn.Iconimage_right = null;
+            this.vkaydetBtn.Iconimage_right_Selected = null;
+            this.vkaydetBtn.Iconimage_Selected = null;
+            this.vkaydetBtn.IconMarginLeft = 0;
+            this.vkaydetBtn.IconMarginRight = 0;
+            this.vkaydetBtn.IconRightVisible = true;
+            this.vkaydetBtn.IconRightZoom = 0D;
+            this.vkaydetBtn.IconVisible = true;
+            this.vkaydetBtn.IconZoom = 90D;
+            this.vkaydetBtn.IsTab = false;
+            this.vkaydetBtn.Location = new System.Drawing.Point(485, 318);
+            this.vkaydetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.vkaydetBtn.Name = "vkaydetBtn";
+            this.vkaydetBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.vkaydetBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.vkaydetBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.vkaydetBtn.selected = false;
+            this.vkaydetBtn.Size = new System.Drawing.Size(193, 65);
+            this.vkaydetBtn.TabIndex = 73;
+            this.vkaydetBtn.Text = "Kaydet";
+            this.vkaydetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.vkaydetBtn.Textcolor = System.Drawing.Color.White;
+            this.vkaydetBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vkaydetBtn.Click += new System.EventHandler(this.vkaydetBtn_Click);
             // 
             // vsure
             // 
@@ -714,6 +1042,45 @@
             this.yguncellendiLbl.TabIndex = 26;
             this.yguncellendiLbl.Text = "BİLGİLER GÜNCELLENDİ!!!";
             this.yguncellendiLbl.Visible = false;
+            // 
+            // ykaydetBtn
+            // 
+            this.ykaydetBtn.Active = false;
+            this.ykaydetBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.ykaydetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.ykaydetBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ykaydetBtn.BorderRadius = 0;
+            this.ykaydetBtn.ButtonText = "Kaydet";
+            this.ykaydetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ykaydetBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.ykaydetBtn.Enabled = false;
+            this.ykaydetBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ykaydetBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.ykaydetBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.ticks;
+            this.ykaydetBtn.Iconimage_right = null;
+            this.ykaydetBtn.Iconimage_right_Selected = null;
+            this.ykaydetBtn.Iconimage_Selected = null;
+            this.ykaydetBtn.IconMarginLeft = 0;
+            this.ykaydetBtn.IconMarginRight = 0;
+            this.ykaydetBtn.IconRightVisible = true;
+            this.ykaydetBtn.IconRightZoom = 0D;
+            this.ykaydetBtn.IconVisible = true;
+            this.ykaydetBtn.IconZoom = 90D;
+            this.ykaydetBtn.IsTab = false;
+            this.ykaydetBtn.Location = new System.Drawing.Point(273, 429);
+            this.ykaydetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ykaydetBtn.Name = "ykaydetBtn";
+            this.ykaydetBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.ykaydetBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.ykaydetBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.ykaydetBtn.selected = false;
+            this.ykaydetBtn.Size = new System.Drawing.Size(193, 65);
+            this.ykaydetBtn.TabIndex = 25;
+            this.ykaydetBtn.Text = "Kaydet";
+            this.ykaydetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ykaydetBtn.Textcolor = System.Drawing.Color.White;
+            this.ykaydetBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ykaydetBtn.Click += new System.EventHandler(this.ykaydetBtn_Click);
             // 
             // yserbestteknik
             // 
@@ -946,8 +1313,8 @@
             // 
             // veriPnl
             // 
-            this.veriPnl.Controls.Add(this.yenileBtn);
-            this.veriPnl.Controls.Add(this.dataGridView1);
+            this.veriPnl.Controls.Add(this.veriListBox);
+            this.veriPnl.Controls.Add(this.getirBtn);
             this.veriPnl.Controls.Add(this.bunifuCustomLabel36);
             this.veriPnl.Controls.Add(this.sporcular);
             this.veriPnl.Controls.Add(this.yuzme);
@@ -960,19 +1327,49 @@
             this.veriPnl.TabIndex = 79;
             this.veriPnl.Visible = false;
             // 
-            // dataGridView1
+            // getirBtn
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 195);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(662, 276);
-            this.dataGridView1.TabIndex = 80;
+            this.getirBtn.Active = false;
+            this.getirBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.getirBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.getirBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.getirBtn.BorderRadius = 0;
+            this.getirBtn.ButtonText = "Bilgileri Getir";
+            this.getirBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.getirBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.getirBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.getirBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.getirBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.bring;
+            this.getirBtn.Iconimage_right = null;
+            this.getirBtn.Iconimage_right_Selected = null;
+            this.getirBtn.Iconimage_Selected = null;
+            this.getirBtn.IconMarginLeft = 0;
+            this.getirBtn.IconMarginRight = 0;
+            this.getirBtn.IconRightVisible = true;
+            this.getirBtn.IconRightZoom = 0D;
+            this.getirBtn.IconVisible = true;
+            this.getirBtn.IconZoom = 90D;
+            this.getirBtn.IsTab = false;
+            this.getirBtn.Location = new System.Drawing.Point(516, 132);
+            this.getirBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.getirBtn.Name = "getirBtn";
+            this.getirBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.getirBtn.OnHovercolor = System.Drawing.Color.Gray;
+            this.getirBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.getirBtn.selected = false;
+            this.getirBtn.Size = new System.Drawing.Size(183, 75);
+            this.getirBtn.TabIndex = 81;
+            this.getirBtn.Text = "Bilgileri Getir";
+            this.getirBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.getirBtn.Textcolor = System.Drawing.Color.White;
+            this.getirBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.getirBtn.Click += new System.EventHandler(this.getirBtn_Click);
             // 
             // bunifuCustomLabel36
             // 
             this.bunifuCustomLabel36.AutoSize = true;
             this.bunifuCustomLabel36.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuCustomLabel36.Location = new System.Drawing.Point(148, 132);
+            this.bunifuCustomLabel36.Location = new System.Drawing.Point(79, 152);
             this.bunifuCustomLabel36.Name = "bunifuCustomLabel36";
             this.bunifuCustomLabel36.Size = new System.Drawing.Size(86, 24);
             this.bunifuCustomLabel36.TabIndex = 79;
@@ -982,206 +1379,11 @@
             // 
             this.sporcular.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sporcular.FormattingEnabled = true;
-            this.sporcular.Location = new System.Drawing.Point(250, 132);
+            this.sporcular.Location = new System.Drawing.Point(181, 152);
             this.sporcular.Name = "sporcular";
             this.sporcular.Size = new System.Drawing.Size(269, 27);
             this.sporcular.TabIndex = 29;
             this.sporcular.Text = "Seçiniz";
-            this.sporcular.SelectedIndexChanged += new System.EventHandler(this.sporcular_SelectedIndexChanged);
-            // 
-            // ykaydetBtn
-            // 
-            this.ykaydetBtn.Active = false;
-            this.ykaydetBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.ykaydetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.ykaydetBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ykaydetBtn.BorderRadius = 0;
-            this.ykaydetBtn.ButtonText = "Kaydet";
-            this.ykaydetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ykaydetBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.ykaydetBtn.Enabled = false;
-            this.ykaydetBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ykaydetBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.ykaydetBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.ticks;
-            this.ykaydetBtn.Iconimage_right = null;
-            this.ykaydetBtn.Iconimage_right_Selected = null;
-            this.ykaydetBtn.Iconimage_Selected = null;
-            this.ykaydetBtn.IconMarginLeft = 0;
-            this.ykaydetBtn.IconMarginRight = 0;
-            this.ykaydetBtn.IconRightVisible = true;
-            this.ykaydetBtn.IconRightZoom = 0D;
-            this.ykaydetBtn.IconVisible = true;
-            this.ykaydetBtn.IconZoom = 90D;
-            this.ykaydetBtn.IsTab = false;
-            this.ykaydetBtn.Location = new System.Drawing.Point(273, 429);
-            this.ykaydetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ykaydetBtn.Name = "ykaydetBtn";
-            this.ykaydetBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.ykaydetBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.ykaydetBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.ykaydetBtn.selected = false;
-            this.ykaydetBtn.Size = new System.Drawing.Size(193, 65);
-            this.ykaydetBtn.TabIndex = 25;
-            this.ykaydetBtn.Text = "Kaydet";
-            this.ykaydetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ykaydetBtn.Textcolor = System.Drawing.Color.White;
-            this.ykaydetBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ykaydetBtn.Click += new System.EventHandler(this.ykaydetBtn_Click);
-            // 
-            // vkaydetBtn
-            // 
-            this.vkaydetBtn.Active = false;
-            this.vkaydetBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.vkaydetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.vkaydetBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.vkaydetBtn.BorderRadius = 0;
-            this.vkaydetBtn.ButtonText = "Kaydet";
-            this.vkaydetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.vkaydetBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.vkaydetBtn.Enabled = false;
-            this.vkaydetBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.vkaydetBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.vkaydetBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.ticks;
-            this.vkaydetBtn.Iconimage_right = null;
-            this.vkaydetBtn.Iconimage_right_Selected = null;
-            this.vkaydetBtn.Iconimage_Selected = null;
-            this.vkaydetBtn.IconMarginLeft = 0;
-            this.vkaydetBtn.IconMarginRight = 0;
-            this.vkaydetBtn.IconRightVisible = true;
-            this.vkaydetBtn.IconRightZoom = 0D;
-            this.vkaydetBtn.IconVisible = true;
-            this.vkaydetBtn.IconZoom = 90D;
-            this.vkaydetBtn.IsTab = false;
-            this.vkaydetBtn.Location = new System.Drawing.Point(485, 318);
-            this.vkaydetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.vkaydetBtn.Name = "vkaydetBtn";
-            this.vkaydetBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.vkaydetBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.vkaydetBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.vkaydetBtn.selected = false;
-            this.vkaydetBtn.Size = new System.Drawing.Size(193, 65);
-            this.vkaydetBtn.TabIndex = 73;
-            this.vkaydetBtn.Text = "Kaydet";
-            this.vkaydetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.vkaydetBtn.Textcolor = System.Drawing.Color.White;
-            this.vkaydetBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vkaydetBtn.Click += new System.EventHandler(this.vkaydetBtn_Click);
-            // 
-            // bkaydetBtn
-            // 
-            this.bkaydetBtn.Active = false;
-            this.bkaydetBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.bkaydetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.bkaydetBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bkaydetBtn.BorderRadius = 0;
-            this.bkaydetBtn.ButtonText = "Kaydet";
-            this.bkaydetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bkaydetBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.bkaydetBtn.Enabled = false;
-            this.bkaydetBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bkaydetBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.bkaydetBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.ticks;
-            this.bkaydetBtn.Iconimage_right = null;
-            this.bkaydetBtn.Iconimage_right_Selected = null;
-            this.bkaydetBtn.Iconimage_Selected = null;
-            this.bkaydetBtn.IconMarginLeft = 0;
-            this.bkaydetBtn.IconMarginRight = 0;
-            this.bkaydetBtn.IconRightVisible = true;
-            this.bkaydetBtn.IconRightZoom = 0D;
-            this.bkaydetBtn.IconVisible = true;
-            this.bkaydetBtn.IconZoom = 90D;
-            this.bkaydetBtn.IsTab = false;
-            this.bkaydetBtn.Location = new System.Drawing.Point(486, 320);
-            this.bkaydetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bkaydetBtn.Name = "bkaydetBtn";
-            this.bkaydetBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.bkaydetBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.bkaydetBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.bkaydetBtn.selected = false;
-            this.bkaydetBtn.Size = new System.Drawing.Size(193, 65);
-            this.bkaydetBtn.TabIndex = 61;
-            this.bkaydetBtn.Text = "Kaydet";
-            this.bkaydetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bkaydetBtn.Textcolor = System.Drawing.Color.White;
-            this.bkaydetBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bkaydetBtn.Click += new System.EventHandler(this.bkaydetBtn_Click);
-            // 
-            // fkaydetBtn
-            // 
-            this.fkaydetBtn.Active = false;
-            this.fkaydetBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.fkaydetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.fkaydetBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fkaydetBtn.BorderRadius = 0;
-            this.fkaydetBtn.ButtonText = "Kaydet";
-            this.fkaydetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fkaydetBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.fkaydetBtn.Enabled = false;
-            this.fkaydetBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.fkaydetBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.fkaydetBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.ticks;
-            this.fkaydetBtn.Iconimage_right = null;
-            this.fkaydetBtn.Iconimage_right_Selected = null;
-            this.fkaydetBtn.Iconimage_Selected = null;
-            this.fkaydetBtn.IconMarginLeft = 0;
-            this.fkaydetBtn.IconMarginRight = 0;
-            this.fkaydetBtn.IconRightVisible = true;
-            this.fkaydetBtn.IconRightZoom = 0D;
-            this.fkaydetBtn.IconVisible = true;
-            this.fkaydetBtn.IconZoom = 90D;
-            this.fkaydetBtn.IsTab = false;
-            this.fkaydetBtn.Location = new System.Drawing.Point(484, 318);
-            this.fkaydetBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.fkaydetBtn.Name = "fkaydetBtn";
-            this.fkaydetBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.fkaydetBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.fkaydetBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.fkaydetBtn.selected = false;
-            this.fkaydetBtn.Size = new System.Drawing.Size(193, 65);
-            this.fkaydetBtn.TabIndex = 49;
-            this.fkaydetBtn.Text = "Kaydet";
-            this.fkaydetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.fkaydetBtn.Textcolor = System.Drawing.Color.White;
-            this.fkaydetBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fkaydetBtn.Click += new System.EventHandler(this.fkaydetBtn_Click);
-            // 
-            // yenileBtn
-            // 
-            this.yenileBtn.Active = false;
-            this.yenileBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.yenileBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.yenileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.yenileBtn.BorderRadius = 0;
-            this.yenileBtn.ButtonText = "Yenile";
-            this.yenileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yenileBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.yenileBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.yenileBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.yenileBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.yenile;
-            this.yenileBtn.Iconimage_right = null;
-            this.yenileBtn.Iconimage_right_Selected = null;
-            this.yenileBtn.Iconimage_Selected = null;
-            this.yenileBtn.IconMarginLeft = 0;
-            this.yenileBtn.IconMarginRight = 0;
-            this.yenileBtn.IconRightVisible = true;
-            this.yenileBtn.IconRightZoom = 0D;
-            this.yenileBtn.IconVisible = true;
-            this.yenileBtn.IconZoom = 90D;
-            this.yenileBtn.IsTab = false;
-            this.yenileBtn.Location = new System.Drawing.Point(571, 116);
-            this.yenileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.yenileBtn.Name = "yenileBtn";
-            this.yenileBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.yenileBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.yenileBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.yenileBtn.selected = false;
-            this.yenileBtn.Size = new System.Drawing.Size(128, 62);
-            this.yenileBtn.TabIndex = 81;
-            this.yenileBtn.Text = "Yenile";
-            this.yenileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.yenileBtn.Textcolor = System.Drawing.Color.White;
-            this.yenileBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yenileBtn.Click += new System.EventHandler(this.yenileBtn_Click);
             // 
             // yuzme
             // 
@@ -1244,7 +1446,7 @@
             this.futbol.IconVisible = true;
             this.futbol.IconZoom = 90D;
             this.futbol.IsTab = false;
-            this.futbol.Location = new System.Drawing.Point(37, 43);
+            this.futbol.Location = new System.Drawing.Point(38, 41);
             this.futbol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.futbol.Name = "futbol";
             this.futbol.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
@@ -1335,217 +1537,16 @@
             this.basketbol.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.basketbol.Click += new System.EventHandler(this.basketbol_Click);
             // 
-            // veriBtn
+            // veriListBox
             // 
-            this.veriBtn.Active = false;
-            this.veriBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.veriBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.veriBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.veriBtn.BorderRadius = 0;
-            this.veriBtn.ButtonText = "İstatistik Verileri";
-            this.veriBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.veriBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.veriBtn.Enabled = false;
-            this.veriBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.veriBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.veriBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.statistic;
-            this.veriBtn.Iconimage_right = null;
-            this.veriBtn.Iconimage_right_Selected = null;
-            this.veriBtn.Iconimage_Selected = null;
-            this.veriBtn.IconMarginLeft = 0;
-            this.veriBtn.IconMarginRight = 0;
-            this.veriBtn.IconRightVisible = true;
-            this.veriBtn.IconRightZoom = 0D;
-            this.veriBtn.IconVisible = true;
-            this.veriBtn.IconZoom = 90D;
-            this.veriBtn.IsTab = false;
-            this.veriBtn.Location = new System.Drawing.Point(13, 398);
-            this.veriBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.veriBtn.Name = "veriBtn";
-            this.veriBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.veriBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.veriBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.veriBtn.selected = false;
-            this.veriBtn.Size = new System.Drawing.Size(182, 62);
-            this.veriBtn.TabIndex = 4;
-            this.veriBtn.Text = "İstatistik Verileri";
-            this.veriBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.veriBtn.Textcolor = System.Drawing.Color.White;
-            this.veriBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.veriBtn.Click += new System.EventHandler(this.veriBtn_Click);
-            // 
-            // yuzmeBtn
-            // 
-            this.yuzmeBtn.Active = false;
-            this.yuzmeBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.yuzmeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.yuzmeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.yuzmeBtn.BorderRadius = 0;
-            this.yuzmeBtn.ButtonText = "Yüzme";
-            this.yuzmeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yuzmeBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.yuzmeBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.yuzmeBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.yuzmeBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.Swim;
-            this.yuzmeBtn.Iconimage_right = null;
-            this.yuzmeBtn.Iconimage_right_Selected = null;
-            this.yuzmeBtn.Iconimage_Selected = null;
-            this.yuzmeBtn.IconMarginLeft = 0;
-            this.yuzmeBtn.IconMarginRight = 0;
-            this.yuzmeBtn.IconRightVisible = true;
-            this.yuzmeBtn.IconRightZoom = 0D;
-            this.yuzmeBtn.IconVisible = true;
-            this.yuzmeBtn.IconZoom = 90D;
-            this.yuzmeBtn.IsTab = false;
-            this.yuzmeBtn.Location = new System.Drawing.Point(13, 303);
-            this.yuzmeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.yuzmeBtn.Name = "yuzmeBtn";
-            this.yuzmeBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.yuzmeBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.yuzmeBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.yuzmeBtn.selected = false;
-            this.yuzmeBtn.Size = new System.Drawing.Size(182, 62);
-            this.yuzmeBtn.TabIndex = 3;
-            this.yuzmeBtn.Text = "Yüzme";
-            this.yuzmeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.yuzmeBtn.Textcolor = System.Drawing.Color.White;
-            this.yuzmeBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yuzmeBtn.Click += new System.EventHandler(this.yuzmeBtn_Click);
-            // 
-            // voleybolBtn
-            // 
-            this.voleybolBtn.Active = false;
-            this.voleybolBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.voleybolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.voleybolBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.voleybolBtn.BorderRadius = 0;
-            this.voleybolBtn.ButtonText = "Voleybol";
-            this.voleybolBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.voleybolBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.voleybolBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.voleybolBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.voleybolBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.Vtop;
-            this.voleybolBtn.Iconimage_right = null;
-            this.voleybolBtn.Iconimage_right_Selected = null;
-            this.voleybolBtn.Iconimage_Selected = null;
-            this.voleybolBtn.IconMarginLeft = 0;
-            this.voleybolBtn.IconMarginRight = 0;
-            this.voleybolBtn.IconRightVisible = true;
-            this.voleybolBtn.IconRightZoom = 0D;
-            this.voleybolBtn.IconVisible = true;
-            this.voleybolBtn.IconZoom = 90D;
-            this.voleybolBtn.IsTab = false;
-            this.voleybolBtn.Location = new System.Drawing.Point(13, 215);
-            this.voleybolBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.voleybolBtn.Name = "voleybolBtn";
-            this.voleybolBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.voleybolBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.voleybolBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.voleybolBtn.selected = false;
-            this.voleybolBtn.Size = new System.Drawing.Size(182, 62);
-            this.voleybolBtn.TabIndex = 2;
-            this.voleybolBtn.Text = "Voleybol";
-            this.voleybolBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.voleybolBtn.Textcolor = System.Drawing.Color.White;
-            this.voleybolBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voleybolBtn.Click += new System.EventHandler(this.voleybolBtn_Click);
-            // 
-            // basketbolBtn
-            // 
-            this.basketbolBtn.Active = false;
-            this.basketbolBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.basketbolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.basketbolBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.basketbolBtn.BorderRadius = 0;
-            this.basketbolBtn.ButtonText = "Basketbol";
-            this.basketbolBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.basketbolBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.basketbolBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.basketbolBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.basketbolBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.Btop;
-            this.basketbolBtn.Iconimage_right = null;
-            this.basketbolBtn.Iconimage_right_Selected = null;
-            this.basketbolBtn.Iconimage_Selected = null;
-            this.basketbolBtn.IconMarginLeft = 0;
-            this.basketbolBtn.IconMarginRight = 0;
-            this.basketbolBtn.IconRightVisible = true;
-            this.basketbolBtn.IconRightZoom = 0D;
-            this.basketbolBtn.IconVisible = true;
-            this.basketbolBtn.IconZoom = 90D;
-            this.basketbolBtn.IsTab = false;
-            this.basketbolBtn.Location = new System.Drawing.Point(13, 130);
-            this.basketbolBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.basketbolBtn.Name = "basketbolBtn";
-            this.basketbolBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.basketbolBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.basketbolBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.basketbolBtn.selected = false;
-            this.basketbolBtn.Size = new System.Drawing.Size(182, 62);
-            this.basketbolBtn.TabIndex = 1;
-            this.basketbolBtn.Text = "Basketbol";
-            this.basketbolBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.basketbolBtn.Textcolor = System.Drawing.Color.White;
-            this.basketbolBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.basketbolBtn.Click += new System.EventHandler(this.basketbolBtn_Click);
-            // 
-            // futbolBtn
-            // 
-            this.futbolBtn.Active = false;
-            this.futbolBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.futbolBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.futbolBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.futbolBtn.BorderRadius = 0;
-            this.futbolBtn.ButtonText = "Futbol";
-            this.futbolBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.futbolBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.futbolBtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.futbolBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.futbolBtn.Iconimage = global::ObserverDPApplication.Properties.Resources.Ftop;
-            this.futbolBtn.Iconimage_right = null;
-            this.futbolBtn.Iconimage_right_Selected = null;
-            this.futbolBtn.Iconimage_Selected = null;
-            this.futbolBtn.IconMarginLeft = 0;
-            this.futbolBtn.IconMarginRight = 0;
-            this.futbolBtn.IconRightVisible = true;
-            this.futbolBtn.IconRightZoom = 0D;
-            this.futbolBtn.IconVisible = true;
-            this.futbolBtn.IconZoom = 90D;
-            this.futbolBtn.IsTab = false;
-            this.futbolBtn.Location = new System.Drawing.Point(13, 38);
-            this.futbolBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.futbolBtn.Name = "futbolBtn";
-            this.futbolBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.futbolBtn.OnHovercolor = System.Drawing.Color.Gray;
-            this.futbolBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.futbolBtn.selected = false;
-            this.futbolBtn.Size = new System.Drawing.Size(182, 62);
-            this.futbolBtn.TabIndex = 0;
-            this.futbolBtn.Text = "Futbol";
-            this.futbolBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.futbolBtn.Textcolor = System.Drawing.Color.White;
-            this.futbolBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.futbolBtn.Click += new System.EventHandler(this.futbolBtn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ObserverDPApplication.Properties.Resources.whistle;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 45);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // kapatPBtn
-            // 
-            this.kapatPBtn.Image = global::ObserverDPApplication.Properties.Resources.close;
-            this.kapatPBtn.Location = new System.Drawing.Point(906, 12);
-            this.kapatPBtn.Name = "kapatPBtn";
-            this.kapatPBtn.Size = new System.Drawing.Size(24, 24);
-            this.kapatPBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.kapatPBtn.TabIndex = 0;
-            this.kapatPBtn.TabStop = false;
-            this.kapatPBtn.Click += new System.EventHandler(this.kapatPBtn_Click);
+            this.veriListBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.veriListBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.veriListBox.FormattingEnabled = true;
+            this.veriListBox.ItemHeight = 26;
+            this.veriListBox.Location = new System.Drawing.Point(37, 244);
+            this.veriListBox.Name = "veriListBox";
+            this.veriListBox.Size = new System.Drawing.Size(662, 212);
+            this.veriListBox.TabIndex = 82;
             // 
             // Form1
             // 
@@ -1567,6 +1568,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ustPnl.ResumeLayout(false);
             this.ustPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kapatPBtn)).EndInit();
             this.yanPnl.ResumeLayout(false);
             this.futbolPnl.ResumeLayout(false);
             this.futbolPnl.PerformLayout();
@@ -1580,9 +1583,6 @@
             this.anasayfaPnl.PerformLayout();
             this.veriPnl.ResumeLayout(false);
             this.veriPnl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kapatPBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1679,8 +1679,8 @@
         private Bunifu.Framework.UI.BunifuFlatButton basketbol;
         private System.Windows.Forms.ComboBox sporcular;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel36;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private Bunifu.Framework.UI.BunifuFlatButton yenileBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton getirBtn;
+        private System.Windows.Forms.ListBox veriListBox;
     }
 }
 
